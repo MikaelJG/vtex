@@ -1,0 +1,28 @@
+In this repo, all you need to insert latex examples in a plain text file.
+
+1 - A .tex file, with sections -  \section{title}
+  - With examples in verbatim  -  \begin{verbatim}
+  - Ending with                -  \end{verbatim}
+
+Like So:
+
+    \section{Variables}
+    
+    \begin{verbatim}
+        int: integers                   
+        double: floating-point numbers
+    \end{verbatim}
+
+
+2 - Textract will extract you examples in a directory.
+    
+Like So:
+    
+    $ cat ./examples/variables
+
+    int: integers                   
+    double: floating-point numbers
+
+3 - A keyword program copying the note in your current directory.
+
+4 - A vim remap both running the keyword program and :r! the new note file.
